@@ -50,7 +50,7 @@ export function Meta({ data }: MetaProps) {
       knowsAbout: data.skills.flatMap((group) => group.items),
     };
 
-    let script = document.getElementById("structured-data");
+    let script = document.getElementById("structured-data") as HTMLScriptElement | null;
 
     if (!(script instanceof HTMLScriptElement)) {
       script = document.createElement("script");
