@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.card {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.header p {
+  margin: var(--space-sm) 0 0;
+  color: var(--color-text-muted);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--color-text-muted);
+}
+
+.list li + li {
+  margin-top: 0.55rem;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

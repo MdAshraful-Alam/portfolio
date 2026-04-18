@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.card {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+

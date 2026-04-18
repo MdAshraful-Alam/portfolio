@@ -1,0 +1,9 @@
+.container {
+  width: var(--container-width);
+  margin: 0 auto;
+}
+
+.narrow {
+  width: min(860px, calc(100% - 2rem));
+}
+

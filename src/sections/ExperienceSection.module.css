@@ -1,0 +1,5 @@
+.timeline {
+  display: grid;
+  gap: var(--space-lg);
+}
+
